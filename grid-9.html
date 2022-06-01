@@ -19,54 +19,78 @@
 <body class="d-flex flex-column h-100">
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bootstrap & The Grids</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a> d
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="grid-1.html">Grid 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="grid-2.html">Grid 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="grid-3.html">Grid 3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="grid-4.html">Grid 4</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="grid-5.html">Grid 5</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="grid-6.html">Grid 6</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="grid-7.html">Grid 7</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="grid-8.html">Grid 8</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="grid-9.html">Grid 9</a>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bootstrap & The Grids</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grid-1.html">Grid 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grid-2.html">Grid 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grid-3.html">Grid 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grid-4.html">Grid 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grid-5.html">Grid 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grid-6.html">Grid 6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grid-7.html">Grid 7</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grid-8.html">Grid 8</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="grid-9.html">Grid 9</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 </nav>
 
     <main class="flex-shrink-0">
-       <div class="container">
-           <h1 class="mt-5">Template with dark fixed navbar and sticky footer</h1>
-           <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with padding-top: 60px; on the main > .container.</p>
-       </div>
+       <div class="container-lg h-100 minHeight">
+            <div class="row h-100 gx-2 gy-3">
+                <div class="col-12">
+                    <div class="bg-dark text-light h-100 p-2">
+                    Main Col
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="bg-secondary text-light h-100 p-2">
+                    Col 1
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="bg-secondary text-light h-100 p-2">
+                    Col 2
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="bg-secondary text-light h-100 p-2">
+                    Col 3
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="bg-secondary text-light h-100 p-2">
+                    Col 4
+                    </div>
+                </div>
+           </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
         <div class="container-fluid text-center">
