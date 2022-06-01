@@ -9,6 +9,10 @@ main>.container {
            width: 100%;
     }
 
+body > main {
+    margin-bottom: 40px
+    }
+    
 .homeText {
     font-family: modesto-open-shadow, sans-serif;
     font-weight: 400;

@@ -61,20 +61,32 @@
 </nav>
 
     <main class="flex-shrink-0">
-       <div class="container h-100">
+       <div class="container h-100 minHeight">
+        <ul class="nav nav-pills mb-1">
+            <li class="nav-item">
+                <a href="/grid-3.html" class="nav-link active" aria-current="page">Grid 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="/grid-3b.html" class="nav-link">Grid 3b</a>
+            </li>
+        </ul>
         <div class="row h-100"> <!--You modify the gutter with "g-{1-5}"-->
-            <div class="col-7">
+            <div class="col-7 h-100">
                 <div class="bg-secondary text-light h-100 p-3"> <!--"h" modifies the height, "p" the padding-->
-                    Article Title
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet. At commodi quas qui maiores sint qui minus beatae et libero consequatur. Quo quidem nemo aut laborum pariatur non voluptatem ipsum. Sed quia molestias hic asperiores sint  consequatur molestiae non eveniet voluptas? Et incidunt possimus qui repellat minus et quas quos ut voluptas repellat et enim eveniet aut labore eius? </p><p>Sit excepturi temporibus est dolore iste et aperiam error ex corrupti perferendis aut nihil magni qui veritatis natus? Id dolores eligendi hic ullam sint ea sunt voluptates id rerum provident ut voluptas galisum et quod numquam. Ut consequatur fuga aut odit culpa aut quam deserunt. Ut quis Quis sed recusandae architecto 33 magni velit. </p><p>Et omnis eius id autem eaque rem minima aliquam et magni veniam qui sunt quos. Eos quod laborum et quasi adipisci ut maxime laudantium sed quasi voluptatem. Ad dolorem consequuntur aut molestiae fuga sit autem consequatur ea sint possimus aut minus omnis est possimus corporis. </p>
                 </div>
             </div>
-            <div class="col-5">
-                <div class="bg-black text-light h-50 p-3">
-                    A
+            <div class="col-5 h-100 d-flex flex-column justify-content-evenly"> <!--overflow helps with overwriting the height limit-->
+                <div class="bg-black text-light h-50 p-3 mb-2 overflow-auto">
+                    <p>Lorem ipsum dolor sit amet. A deserunt deserunt est officiis ducimus vel omnis asperiores ex amet ipsa qui adipisci velit aut iusto minima aut numquam delectus. In cupiditate nesciunt ab numquam  et perferendis aliquam ad eveniet minima aut inventore eius ea deleniti cupiditate. Et nisi delectus sit quas molestiae quo soluta exercitationem est vero neque. </p>
                 </div>
-                <div class="bg-black text-light h-50 p-3">
-                    
+                <div class="bg-black text-light h-50 p-3 overflow-hidden">
+                    <p>Lorem ipsum dolor sit amet. A deserunt deserunt est officiis ducimus vel omnis asperiores ex amet ipsa qui adipisci velit aut iusto minima aut numquam delectus. In cupiditate nesciunt ab numquam  et perferendis aliquam ad eveniet minima aut inventore eius ea deleniti cupiditate. Et nisi delectus sit quas molestiae quo soluta exercitationem est vero neque. </p>
                 </div>
+                <div class="bg-black text-light border border-top p-3">
+                    <button class="btn btn-light" type="button">Read More</button>
+                </div>    
             </div>           
         </div>
     </main>

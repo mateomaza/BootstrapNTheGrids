@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    
+
     <link href="/css/site.css" rel="stylesheet">
 </head>
 
@@ -32,10 +32,10 @@
                     <a class="nav-link" href="grid-1.html">Grid 1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="grid-2.html">Grid 2</a>
+                    <a class="nav-link" href="grid-2.html">Grid 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="grid-3.html">Grid 3</a>
+                    <a class="nav-link active" aria-current="page" href="grid-3.html">Grid 3</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="grid-4.html">Grid 4</a>
@@ -62,17 +62,43 @@
 
     <main class="flex-shrink-0">
        <div class="container h-100 minHeight">
-        <div class="row row-cols-2 h-100 g-2"> <!--You modify the gutter with "g-{1-5}"-->
-            <div class="col-3">
+        <ul class="nav nav-pills mb-1">
+            <li class="nav-item">
+                <a href="/grid-3.html" class="nav-link">Grid 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="/grid-3b.html" class="nav-link active" aria-current="page">Grid 3b</a>
+            </li>
+        </ul>
+        <div class="row h-100"> <!--You modify the gutter with "g-{1-5}"-->
+            <div class="col-7 h-100">
                 <div class="bg-secondary text-light h-100 p-3"> <!--"h" modifies the height, "p" the padding-->
-                    Sidebar
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet. At commodi quas qui maiores sint qui minus beatae et libero consequatur. Quo quidem nemo aut laborum pariatur non voluptatem ipsum. Sed quia molestias hic asperiores sint  consequatur molestiae non eveniet voluptas? Et incidunt possimus qui repellat minus et quas quos ut voluptas repellat et enim eveniet aut labore eius? </p><p>Sit excepturi temporibus est dolore iste et aperiam error ex corrupti perferendis aut nihil magni qui veritatis natus? Id dolores eligendi hic ullam sint ea sunt voluptates id rerum provident ut voluptas galisum et quod numquam. Ut consequatur fuga aut odit culpa aut quam deserunt. Ut quis Quis sed recusandae architecto 33 magni velit. </p><p>Et omnis eius id autem eaque rem minima aliquam et magni veniam qui sunt quos. Eos quod laborum et quasi adipisci ut maxime laudantium sed quasi voluptatem. Ad dolorem consequuntur aut molestiae fuga sit autem consequatur ea sint possimus aut minus omnis est possimus corporis. </p>
                 </div>
             </div>
-            <div class="col-9">
-                <div class="bg-black text-light h-100 p-3">
-                    Main
+            <div class="col-5"> <!--overflow helps with overwriting the height limit-->
+                <div class="bg-secondary text-light p-3">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
                 </div>
-            </div>       
+                <div class="bg-black text-light p-3 mt-2">
+                    <h5>More Articles</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>           
         </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
